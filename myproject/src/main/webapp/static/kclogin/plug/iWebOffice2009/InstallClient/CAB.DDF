@@ -1,0 +1,32 @@
+.OPTION EXPLICIT
+.Set Cabinet=on
+.Set Compress=on
+.Set MaxDiskSize=CDROM
+.Set ReservePerCabinetSize=6144
+.Set DiskDirectoryTemplate="."
+.Set CompressionType=MSZIP
+.Set CompressionLevel=7
+.Set CompressionMemory=21
+.Set CabinetNameTemplate="iWebOffice2009.cab"
+"Installer.inf"
+"CAB.DDF"
+"iWebOffice2009.ocx"
+"gdiplus.dll"
+"InstallPrinter.exe"
+"ControlPrinter.dll"
+"GoldGridPrint.dll"
+"kgdrv.dll"
+"kgdrvui.dll"
+"KGMaker.exe"
+"KGnames.gpd"
+"GGPrinter.gpd"
+"kgdrv_x64.dll"
+"kgdrvui_x64.dll"
+"WinX64.exe"
+"GoldGridPrint_X64.dll"
+"setup.exe"
+"setup.lst"
+"IEExecute.exe"
+"IEExecute.Lst"
+"SignatureSetEnv.exe"
+

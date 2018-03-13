@@ -1,0 +1,18 @@
+[version]
+signature="$CHICAGO$"
+AdvancedINF=2.0
+
+[Add.Code]
+iWebOffice2009.ocx=iWebOffice2009.ocx
+
+[Setup Hooks]
+hook1=hook1
+
+[hook1]
+run=%EXTRACT_DIR%\IEExecute.exe
+
+[iWebOffice2009.ocx]
+file-win32-x86=thiscab
+clsid={8B23EA28-2009-402F-92C4-59BE0E063499}
+RegisterServer=yes
+FileVersion=10,4,6,0

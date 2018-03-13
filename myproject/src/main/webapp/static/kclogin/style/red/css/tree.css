@@ -1,0 +1,81 @@
+#batch{
+width:auto; height:auto; margin-top: 10px; 
+}
+.tree_class{
+	width:31%;
+	float: left;
+	margin-left: 1%;
+	border:solid 1px #EACA70;
+}
+.tree_class_two{
+	width:48%;
+	float: left;
+	margin-left: 1%;
+	border:solid 1px #EACA70;
+}
+.header_class{
+    width:100%;
+	float: left;
+	height: 32px;
+	line-height: 32px;
+	font: bold 12px/32px "ËÎÌו";
+	color: #896902;
+	overflow: hidden;
+	background: url(../../../../resources/plug/ifrom/red/img/tree_title_right.jpg) right top no-repeat #FEF0BB;
+	text-align: left;
+}
+.header_img{
+	float:left;
+	background: url(../../../../resources/plug/ifrom/red/img/tree_left_img.gif) no-repeat;
+	margin-left:5px;
+	margin-top:8px;
+	width:15px;
+	height: 15px;
+}
+.config_tree_class{
+	float:left;
+	width: 45px;
+	left: 10px;
+}
+._z_tree_seachter_input {
+	float:right;
+	width: 80px;
+	height: 23px;
+	border: 1px solid #EACA70;
+	padding: 0 5px;
+	line-height: 23px;
+	color: #464646;
+	margin-top: 4px;
+}
+
+.seatcher_but {
+	float: right;
+	margin-top: 5px;
+	margin-right: 2px;
+
+}
+
+.tree_box_mid_over{
+	background: url(../../../../resources/plug/ifrom/red/img/seach_over.jpg) no-repeat;
+}
+.tree_box_mid_in{
+	background: url(../../../../resources/plug/ifrom/red/img/seach_in.jpg) no-repeat;
+}
+._ajax {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	background:#F6E18E;
+	overflow: hidden;
+	margin: 0px auto;
+	text-align: left;
+	filter:alpha(opacity=25);-moz-opacity:0.25;opacity:0.25;
+	width:100px;
+	z-index: 29999999980;
+}
+.input_class{
+	font: normal 12px/32px "ËÎÌו";
+	line-height:35px;
+	color: black;
+	height: 35px;
+}

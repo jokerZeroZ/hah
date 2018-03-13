@@ -1,0 +1,7 @@
+@charset utf-8;
+#fileupload { 
+    height:1px;
+    width:1px;
+    opacity: 0;
+    filter:alpha(opacity=0);
+}

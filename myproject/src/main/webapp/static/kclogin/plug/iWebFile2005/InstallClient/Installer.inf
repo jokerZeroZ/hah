@@ -1,0 +1,12 @@
+[version]
+signature="$CHICAGO$"
+AdvancedINF=2.0
+
+[Add.Code]
+iWebFile2005.ocx=iWebFile2005.ocx
+
+[iWebFile2005.ocx]
+file-win32-x86=thiscab
+clsid={074106C0-5E71-4151-9CE8-9B024485B58F}
+RegisterServer=yes
+FileVersion=6,2,0,30

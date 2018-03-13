@@ -1,0 +1,48 @@
+@charset utf-8;/*!@author:刘双双. @update:2013-11-18 系统设置CSS*/ 
+
+/* 基本设置 */
+.setupthe{width:100%; margin-left:auto; margin-right:auto; margin-top:10px;}
+.basic{width:99%; float:left;}
+.basic h3.basic_h3{ border-bottom:solid 1px #dddddd; width:100%; float:left; line-height:30px; font-size:14px; padding-bottom:5px;}
+.basic_1{ border-bottom:solid 1px #dddddd; width:100%; float:left; height:28px; line-height:28px; font-size:14px; padding:20px 0px; }
+.basic_1_p{ float:left; margin-right:30px;}
+.basic_1_p p{ float:left;}
+.basic_2{border-bottom:solid 1px #dddddd; width:100%; float:left; padding:20px 0px; }
+.basic_2_left{float:left; height:30px; font-size:14px; }
+.basic_2_right{ width:206px; height:146px; line-height:40px; float:left; margin-left:20px; text-align:center;}
+.basic_2_right img{ width:200px; height:100px; padding:2px; border:solid 1px #e4e4e4;}
+.basic_2_right img:hover{ width:200px; height:100px; padding:2px; border:solid 1px #3c86db;}
+.basic_3{float:left; width:100%; height:28px; padding:20px 0px;}
+
+/* 换肤 */
+.skin{ width:126px; float:left; margin-right:30px; height:166px; line-height:40px; text-align:center; margin-top:30px; display:inline;}
+.skin img{width:120px; height:120px; padding:2px; border:solid 1px #e4e4e4;}
+.skin img:hover{ width:120px; height:120px; padding:2px; border:solid 1px #3c86db;}
+
+.skin1{ width:126px; float:left; margin-right:30px; height:166px; line-height:40px; text-align:center; margin-top:30px; display:inline;}
+.skin1 img{width:120px; height:120px; padding:2px; border:solid 1px #3c86db;}
+
+/* 标签设置 */
+.label{width:100%; float:left; margin-top:20px;}
+.label h3.label_h3{width:100%; float:left; line-height:30px; font-size:14px; margin-bottom:20px; }
+.label h3.label_h3 a{ color:#3c86db; padding:5px;}
+.label h3.label_h3 a:hover{ color:#fff; background:#3c86db; padding:5px;}
+.label ul li{ width:112px; height:36px; line-height:36px; float:left; text-align:center; font-family:"microsoft yahei"; font-size:14px; margin-right:10px; display:inline; position:relative; margin-bottom:10px; }
+.label .label_an1{width:112px; height:36px; background:url(../images/box_bj.png) repeat-x -122px -383px; float:left; }
+.label .label_an1 b{ font-weight:normal; width:66px; text-align:center; margin-left:23px; float:left; overflow:hidden;height:36px; line-height:36px;}
+.label .label_an2{width:112px; height:36px; background:url(../images/box_bj.png) repeat-x 0px -383px; float:left; }
+.label .label_an2 b{ font-weight:normal; width:66px; text-align:center; margin-left:23px; float:left; overflow:hidden;height:36px; line-height:36px;}
+.label .label_an1:hover{width:112px; height:36px; background:url(../images/box_bj.png) repeat-x -122px -429px; float:left; cursor:move;}
+.label .label_an2:hover{width:112px; height:36px; background:url(../images/box_bj.png) repeat-x 0px -429px; float:left; cursor:move; }
+.label_increase{ float:left; width:14px; height:14px; background:url(../images/pic.png) no-repeat -86px -314px; position:absolute; right:-7px; top:-7px;}
+.label_increase a{float:left; width:14px; height:14px;}
+.label_increase:hover{ cursor:pointer;}
+.label_delete{ float:left; width:14px; height:14px; background:url(../images/pic.png) no-repeat -86px -338px; position:absolute; right:-7px; top:-7px;}
+.label_delete a{float:left; width:14px; height:14px;}
+.label_delete:hover{ cursor:pointer;}
+
+/* 修改密码 */
+.password{ border-bottom:solid 1px #dddddd; width:100%; float:left; padding-bottom:30px; }
+.password_text{width:100%; float:left; margin-top:30px;}
+.password_text_left{float:left; width:100px; margin-right:10px; display:inline; text-align:right; font-size:14px; color:#333333; height:28px; line-height:28px; overflow:hidden;}
+.password_text_right{ float:left; height:28px;}

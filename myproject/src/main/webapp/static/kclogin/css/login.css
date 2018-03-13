@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* CSS Document */
+html,body {margin:0px;height:100%;}
+img {border:0}
+a{ text-decoration: none; color:#5c5c5c; outline:none; }
+a:hover{text-decoration:none; color:#f30; outline:none;}
+body{font-family:"";font-size:12px;line-height: 20px; }
+select,input{font-size: 12px;font-family: ""; padding:0; margin:0;}
+ul,li,dl,dt,dd,h1,h2,h3,h4,h5,p,form,em,span{ margin:0; padding:0; list-style:none}
+table{ border:0; padding:0; margin:0;}
+em{ font-style:normal}
+html{ background:#fff url(../image/loginbg.jpg) repeat-x left top;}
+.clear{ clear:both}
+
+
+.loginimg{ background:url(../image/loginimg.png) no-repeat left top; margin:0px auto 0; width:995px; height:610px; position:relative;}
+/*09.13修改*/
+.login{ width:443px; height:358px; position:absolute; left:620px; top:200px;}
+.logintext{ width:443px; margin:0 auto; color:#4D4D4D; font:14px/35px Verdana, Geneva, sans-serif; font-size:14px;}
+.logintext li{ float:left; margin:5px 0 15px;}
+.logintext li span{ float:left;}
+.logininput{ width:234px; height:35px; background:url(../image/logininput.jpg) no-repeat left top; border:none; margin-left:5px; float:left;font-size:14px; line-height:35px; padding:0 2px;  }
+.logininput02{ width:121px; height:35px; background:url(../image/logininput02.jpg) no-repeat left top; border:none; margin-left:5px; float:left; font-size:14px; line-height:35px; padding:0 2px; margin-right:2px;  }
+.btn01{ width:88px; height:29px; border:none; cursor:pointer; background:url(../image/denglu.gif) no-repeat left top ; margin:0 5px;}
+.btn02{ width:88px; height:29px; border:none; cursor:pointer; background:url(../image/chongzhi.gif) no-repeat left top ; margin:0 5px;}
+
+
+/*top 样式*/
+.top{ background:url(../image/top_bg.jpg) repeat-x left top; height:65px;}
+.topright{ float:right; margin:6px 10px 0 5px; width:340px; }
+.topbtn01{ background:url(../image/ico.png) no-repeat -12px -11px; width:106px; height:25px; line-height:25px; float:left; text-align:center; color:#000; font-weight:bold; margin-left:5px; }
+.topbtn02{ background:url(../image/ico.png) no-repeat -13px -40px; width:106px; height:25px; line-height:25px; float:left; text-align:center; color:#000; font-weight:bold; margin-left:5px; }
+.topbtn03{ background:url(../image/ico.png) no-repeat -13px -69px; width:106px; height:25px; line-height:25px; float:left; text-align:center; color:#000; font-weight:bold; margin-left:5px; }
+
+/*09.13新增*/
+.logintop{ float:left; width:443px; height:125px; background:url(../image/login1.png) left top no-repeat}
+.logincenter{ float:left; width:443px; height:25px; background:url(../image/login1.png) left -33px no-repeat}
+.loginbottom{ float:left;  width:443px; height:165px; background:url(../image/login1.png) left -133px no-repeat; padding-top:10px;}
+.loginmid{ float:left; width:443px; background:url(../image/loginmid.png) left top repeat-y; padding-left:50px;}
+.loginmid li{ margin:5px 0; padding:0px;width:300px;}
+
+.loginselect{margin-left:2px; width:237px; height:35px; float:left}
+.bcts{ width:294px; height:30px; background:#FEFFCA; border:1px solid #F5C51F; line-height:30px; float:left}
+.bcts span{ padding:0; float:left;}
+/*.bcts img{ margin:7px 10px; float:left;}*/

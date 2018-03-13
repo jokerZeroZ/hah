@@ -1,0 +1,26 @@
+html,body {margin:0px;height:100%;  background:#fff url(../images/xiantan_bg.jpg) center 38px no-repeat;}
+img {border:0}
+a{ text-decoration: none; color:#5e5e5e; }
+a:hover{text-decoration:none; color:#f30;}
+body{font-family:"Î¢ÈíÑÅºÚ";font-size:12px;line-height:24px; }
+select,input{font-size:12px;font-family: ""; padding:0; margin:0;}
+ul,li,dl,dt,dd,h1,h2,h3,h4,h5,p,form,em,span{ margin:0; padding:0; list-style:none}
+table{ border:0px; padding:0; margin:0;}
+em{ font-style:normal}
+.clear{ clear:both; height:0px; line-height:0px; overflow:hidden;}
+.l{ float:left;}
+.r{ float:right;}
+
+.kk07{ width:842px; height:auto; background:#fff; border:1px #999 solid; margin:0 auto;-moz-box-shadow:0px 0px 10px 0px #555; -webkit-box-shadow:0px 0px 10px 0px #555; box-shadow:0 0 10px 0 #555;}
+caption{ font-size:20px; line-height:46px; height:46px; border-bottom:1px #ccc solid; background:url(images/bg07.gif) repeat-x; text-shadow:0 1px 0 #fff;}
+td.a1{ width:120px; padding:30px 20px;}
+.xk{ width:120px; text-align:center;border:2px #eee solid; padding-top:15px}
+.xk2{ text-align:left;border:2px #eee solid; padding-top:5px}
+.link{ margin-bottom:15px;}
+.link a{ display:block; line-height:36px; font-size:16px; color:#000;}
+.link a:hover{ color:#c30205; text-decoration:underline;}
+td.a2{ width:140px; text-align:center; }
+td.a3{ text-align:center; }
+.detail{text-align:center; font-size:14px; color:#c30205; height:28px; background:#f1f1f1; border-bottom:1px #e1e1e1 solid; line-height:28px; margin-bottom:5px;}
+.detail a{ color:#006bb2; padding-left:5px;}
+.detail2{ text-align:left; font-size:14px; color:#c30205; height:28px; background:#f1f9f1; border-bottom:1px #e1e1e1 solid; line-height:28px; margin-bottom:5px;}
