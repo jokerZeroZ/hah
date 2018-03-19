@@ -73,8 +73,8 @@ public abstract class DataEntity extends BaseEntity implements Serializable {
 	}
 	
 	@JsonIgnore
-	@ManyToOne(fetch=FetchType.LAZY)
-	@NotFound(action = NotFoundAction.IGNORE)
+	//@ManyToOne(fetch=FetchType.LAZY)
+	//@NotFound(action = NotFoundAction.IGNORE)
 	public User getCreateBy() {
 		return createBy;
 	}
@@ -94,8 +94,8 @@ public abstract class DataEntity extends BaseEntity implements Serializable {
 	}
 
 	@JsonIgnore
-	@ManyToOne(fetch=FetchType.LAZY)
-	@NotFound(action = NotFoundAction.IGNORE)
+	//@ManyToOne(fetch=FetchType.LAZY)
+	//@NotFound(action = NotFoundAction.IGNORE)
 	public User getUpdateBy() {
 		return updateBy;
 	}

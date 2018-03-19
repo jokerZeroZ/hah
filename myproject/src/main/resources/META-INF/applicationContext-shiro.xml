@@ -7,9 +7,6 @@
 
 	<description>Shiro Configuration</description>
 
-    <!-- 加载配置属性文件 -->
-	<context:property-placeholder ignore-unresolvable="true" location="classpath:META-INF/config.properties" />
-	
 	<!-- 定义 Shiro 主要业务对象 -->
 	<bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
 		<property name="realm" ref="systemAuthorizingRealm" />
@@ -19,8 +16,8 @@
 	<!-- 安全认证过滤器 -->
 	<bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
 		<property name="securityManager" ref="securityManager" />
-		<property name="loginUrl" value="${adminPath}/login" />
-		<property name="successUrl" value="${adminPath}" />
+		<property name="loginUrl" value="/a/login" />
+		<property name="successUrl" value="/a" />
 		<property name="filters">
             <map>
                 <entry key="authc" value-ref="formAuthenticationFilter"/>
@@ -29,17 +26,17 @@
 		<property name="filterChainDefinitions">
 			<value>
 				/static/** = anon
-				${adminPath}/jeesite-base/appinfosurvey/getHtml = anon
-				${adminPath}/login = authc
-				${adminPath}/logout = logout
-				${adminPath}/** = user
+				/a/jeesite-base/appinfosurvey/getHtml = anon
+				/a/login = authc
+				/a/logout = logout
+				/a/** = user
 		 	</value>
 		</property>
 	</bean>
 
 	<!-- 用户授权信息Cache, 采用EhCache -->
 	<bean id="cacheManager" class="org.apache.shiro.cache.ehcache.EhCacheManager">
-		<property name="cacheManagerConfigFile" value="classpath:cache/ehcache.xml"/>
+		<property name="cacheManagerConfigFile" value="classpath:META-INF/ehcache.xml"/>
 	</bean>
 	
 	<!-- 保证实现了Shiro内部lifecycle函数的bean执行 -->

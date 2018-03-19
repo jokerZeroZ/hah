@@ -8,10 +8,12 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context-4.1.xsd
         http://www.springframework.org/schema/mvc
-        http://www.springframework.org/schema/mvc/spring-mvc-4.1.xsd">
+        http://www.springframework.org/schema/mvc/spring-mvc-4.1.xsd
+        http://www.springframework.org/schema/data/jpa
+        http://www.springframework.org/schema/data/jpa/spring-jpa-1.2.xsd">
         
     <!-- **************************配置spring************************ -->
-    <!-- 自动扫描 -->
+    <!-- 使用Annotation自动注册Bean，解决事物失效问题：在主容器中不扫描@Controller注解，在SpringMvc中只扫描@Controller注解。  -->
     <context:component-scan base-package="erp.myproject">
         <!-- 扫描时跳过@Controller注解的Java类（控制器） -->
         <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
@@ -19,7 +21,10 @@
     
     <!-- **************************配置hibernate************************ -->
     <!-- 扫描配置文件 -->
-    <context:property-placeholder location="classpath:META-INF/config.properties"/>
+    <context:property-placeholder ignore-unresolvable="true" location="classpath:META-INF/config.properties"/>
+	
+    <!-- 获取bean工具注入 -->
+	<bean id="springContextHolder" class="erp.myproject.sys.utils.SpringContextHolder" lazy-init="false"/>
     
     <!-- 配置数据源 -->
     <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
@@ -36,19 +41,32 @@
     <!-- 配置session工厂 -->
     <bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>
-        <property name="packagesToScan" value="erp.myproject.entity"/>
+        <property name="packagesToScan" value="erp.myproject"/>
         <property name="hibernateProperties">
             <props>
                 <prop key="hibernate.hbm2ddl.auto">${hibernate.hbm2ddl.auto}</prop>	<!-- hibernate根据实体自动生成数据库表 -->
                 <prop key="hibernate.dialect">${hibernate.dialect}</prop>			<!-- 指定数据库方言 -->
                 <prop key="hibernate.show_sql">${hibernate.show_sql}</prop>			<!-- 在控制台显示执行的数据库操作语句 -->
                 <prop key="hibernate.format_sql">${hibernate.format_sql}</prop>		<!-- 在控制台显示执行的数据库操作语句（格式） -->
+                <!-- 配置二级缓存 -->
+                <prop key="hibernate.cache.use_second_level_cache">true</prop>
+                <prop key="hibernate.cache.region.factory_class">org.hibernate.cache.ehcache.EhCacheRegionFactory</prop>
+                <!-- 开启查询缓存 -->
+                <prop key="hibernate.cache.use_query_cache">true</prop>
+                <prop key="hibernate.cache.provider_configuration_file_resource_path">classpath:META-INF/ehcache.xml</prop>
             </props>
         </property>
     </bean>
+	
     <!-- 事物管理配置 -->
     <bean id="transactionManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager">
         <property name="sessionFactory" ref="sessionFactory"/>
+        <property name="nestedTransactionAllowed" value="true"/>
+    </bean>
+    
+    <!-- 配置hibernateTemplate -->
+    <bean id="hibernateTemplate" class="org.springframework.orm.hibernate4.HibernateTemplate">
+        <property name="sessionFactory" ref="sessionFactory"></property>
     </bean>
 </beans>
     	

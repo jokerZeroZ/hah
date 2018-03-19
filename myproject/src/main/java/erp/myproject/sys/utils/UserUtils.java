@@ -1,4 +1,5 @@
 package erp.myproject.sys.utils;
+
 import java.security.Principal;
 /** 
 * @author joker E-mail:zhanglq@hnu.edu.cn 
@@ -21,8 +22,12 @@ import org.hibernate.criterion.Order;
 import org.hibernate.criterion.Restrictions;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import com.google.common.collect.Maps;
+
 import erp.myproject.entity.User;
 import erp.myproject.sys.dao.BaseDao;
+import erp.myproject.sys.dao.MenuDao;
+import erp.myproject.sys.entity.Menu;
 import erp.myproject.sys.service.BaseService;
 
 /**
@@ -38,9 +43,9 @@ import erp.myproject.sys.service.BaseService;
 public class UserUtils extends BaseService { 
 	
 	private static BaseDao userDao = SpringContextHolder.getBean(BaseDao.class);
-	/*	private static ReferUserDao referUserDao = SpringContextHolder.getBean(ReferUserDao.class);
+	//	private static ReferUserDao referUserDao = SpringContextHolder.getBean(ReferUserDao.class);
 	private static MenuDao menuDao = SpringContextHolder.getBean(MenuDao.class);
-	private static AreaDao areaDao = SpringContextHolder.getBean(AreaDao.class);
+	/*private static AreaDao areaDao = SpringContextHolder.getBean(AreaDao.class);
 	private static OfficeDao officeDao = SpringContextHolder
 			.getBean(OfficeDao.class);
 	private static OfficeBfDao officeBfDao = SpringContextHolder
@@ -53,7 +58,7 @@ public class UserUtils extends BaseService {
 	// SpringContextHolder.getBean(JydTreeinfoDao.class);
 	*/
 	public static final String CACHE_USER = "user";
-	/*
+	
 	public static final String CACHE_MENU_LIST = "menuList";
 	public static final String CACHE_AREA_LIST = "areaList";
 	public static final String CACHE_OFFICE_LIST = "officeList";
@@ -69,7 +74,7 @@ public class UserUtils extends BaseService {
 	public static final String CACHE_getAllUserList="getAllUserList";
 	public static final String CACHE_OFFICE_BF_LIST="officeBfList";
 	
-	*/
+	
 	public static User getUser() {
 //		User user = (User) getCache(CACHE_USER);
 		User user = new User();
@@ -112,7 +117,7 @@ public class UserUtils extends BaseService {
 		}
 		return getUser();
 	}
-
+*/
 	public static List<Menu> getMenuList() {
 		@SuppressWarnings("unchecked")
 		List<Menu> menuList = (List<Menu>) getCache(CACHE_MENU_LIST);
@@ -127,7 +132,6 @@ public class UserUtils extends BaseService {
 		}
 		return menuList;
 	}
-	
 	/**
 	 * 根据登录的用户ID获取能够访问的组织机构
 	 * 
@@ -500,7 +504,7 @@ public class UserUtils extends BaseService {
             return reault;            
      }
 
-
+*/
 	// ============== User Cache ==============
 
 	public static Object getCache(String key) {
@@ -525,12 +529,13 @@ public class UserUtils extends BaseService {
 		try {
 			Subject subject = SecurityUtils.getSubject();
 			Principal principal = (Principal) subject.getPrincipal();
-			return principal != null ? principal.getCacheMap() : map;
+			//原return principal != null ? principal.getCacheMap() : map;
+			return principal != null ? ((UserUtils) principal).getCacheMap() : map;
 		} catch (UnavailableSecurityManagerException e) {
 			return map;
 		}
 	}
-
+	/*
 	public static List<Area> getAllowAreaListByParentId(String parentId) {
 
 		List<Area> allowAreaList = new ArrayList<Area>();

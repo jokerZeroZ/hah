@@ -13,10 +13,10 @@ import org.hibernate.annotations.DynamicUpdate;
 * @version createTime:2018年3月13日 下午3:37:13 
 * explain
 */
-@Entity
-@Table(name = "role")
-@DynamicInsert @DynamicUpdate
-@Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
+//@Entity
+//@Table(name = "role")
+//@DynamicInsert @DynamicUpdate
+//@Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
 public class Role extends DataEntity{
 	
 	private static final long serialVersionUID = 1L;

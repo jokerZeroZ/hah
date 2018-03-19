@@ -79,7 +79,7 @@ public class LoginFilter implements Filter {
 		pattenURL.add("fonts");
 	}
 
-	@Override
+	//@Override
 	public void destroy() {
 		// TODO Auto-generated method stub
 		

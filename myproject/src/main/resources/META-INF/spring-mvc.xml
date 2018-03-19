@@ -25,6 +25,18 @@
 	<!-- 定义无Controller的path<->view直接映射 -->
 	<mvc:view-controller path="/" view-name="redirect:/a"/>
 
+	<!-- 支持Shiro对Controller的方法级AOP安全控制 begin-->
+	<bean class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator" depends-on="lifecycleBeanPostProcessor">
+		<property name="proxyTargetClass" value="true" />
+	</bean>
+	<bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">  
+        <property name="exceptionMappings">  
+            <props>  
+                <prop key="org.apache.shiro.authz.UnauthorizedException">error/403</prop>
+            </props>  
+        </property>  
+    </bean>  
+	
 	<!--这里是对静态资源的映射-->
 	<mvc:resources location="/resources/js/" mapping="/js/**"/>
 	<mvc:resources location="/resources/css/" mapping="/css/**"/>

@@ -135,11 +135,11 @@ public class DictUtils {
 		}
 		return tmpList;
 	}
-
+*/
 	public static String getMenuVarValue(String value) {
 		return getDictLabel(value, MENU_VAR, "");
 	}
-
+/*
 	// 以某个表的ID取出该表的对应名称
 	public static String getTableFieldLabel(String tablename, String showfield,
 			String wherefield, String fieldvalue) {

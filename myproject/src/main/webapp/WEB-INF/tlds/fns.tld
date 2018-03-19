@@ -191,7 +191,7 @@
 	<function>
 		<description>获取字典值</description>
 		<name>getDictValue</name>
-		<function-class>com.chinacreator.modules.sys.utils.DictUtils</function-class>
+		<function-class>erp.myproject.sys.utils.DictUtils</function-class>
 		<function-signature>java.lang.String getDictValue(java.lang.String,
 			java.lang.String, java.lang.String)
 		</function-signature>
@@ -201,15 +201,15 @@
 	<function>
 		<description>获取字典对象列表</description>
 		<name>getDictList</name>
-		<function-class>com.chinacreator.modules.sys.utils.DictUtils</function-class>
+		<function-class>erp.myproject.sys.utils.DictUtils</function-class>
 		<function-signature>java.util.List getDictList(java.lang.String)</function-signature>
 		<example>${fns:getDictList(type)}</example>
 	</function>
-<!--
+
 	<function>
 		<description>根据ID获取相应表字段</description>
 		<name>getTableFieldLabel</name>
-		<function-class>com.chinacreator.modules.sys.utils.DictUtils</function-class>
+		<function-class>erp.myproject.sys.utils.DictUtils</function-class>
 		<function-signature>java.lang.String
 			getTableFieldLabel(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
 		</function-signature>
@@ -219,36 +219,37 @@
 	<function>
 		<description>获取报账流程字典对象列表</description>
 		<name>getDictListBytypeAndRank</name>
-		<function-class>com.chinacreator.modules.sys.utils.DictUtils</function-class>
+		<function-class>erp.myproject.sys.utils.DictUtils</function-class>
 		<function-signature>java.util.List getDictListBytypeAndRank(java.lang.String,java.lang.String)</function-signature>
 		<example>${fns:getDictList(type,rank)}</example>
 	</function>
-	<!-- Encodes --><!--
+
+	<!-- Encodes -->
 	<function>
 		<description>URL编码</description>
 		<name>urlEncode</name>
-		<function-class>com.chinacreator.common.utils.Encodes</function-class>
+		<function-class>erp.myproject.sys.utils.Encodes</function-class>
 		<function-signature>java.lang.String urlEncode(java.lang.String)</function-signature>
 		<example>${fns:urlEncode(part)}</example>
 	</function>
 	<function>
 		<description>URL解码</description>
 		<name>urlDecode</name>
-		<function-class>com.chinacreator.common.utils.Encodes</function-class>
+		<function-class>erp.myproject.sys.utils.Encodes</function-class>
 		<function-signature>java.lang.String urlDecode(java.lang.String)</function-signature>
 		<example>${fns:urlDecode(part)}</example>
 	</function>
 	<function>
 		<description>HTML编码</description>
 		<name>escapeHtml</name>
-		<function-class>com.chinacreator.common.utils.Encodes</function-class>
+		<function-class>erp.myproject.sys.utils.Encodes</function-class>
 		<function-signature>java.lang.String escapeHtml(java.lang.String)</function-signature>
 		<example>${fns:escapeHtml(html)}</example>
 	</function>
 	<function>
 		<description>HTML解码</description>
 		<name>unescapeHtml</name>
-		<function-class>com.chinacreator.common.utils.Encodes</function-class>
+		<function-class>erp.myproject.sys.utils.Encodes</function-class>
 		<function-signature>java.lang.String unescapeHtml(java.lang.String)</function-signature>
 		<example>${fns:unescapeHtml(html)}</example>
 	</function>
@@ -302,19 +303,19 @@
 		<function-signature>java.lang.String replaceHtml(java.lang.String)</function-signature>
 		<example>${fns:replaceHtml(html)}</example>
 	</function>
-
-	<!-- DateUtils --><!--
+ -->
+	<!-- DateUtils -->
 	<function>
 		<description>获取当前日期</description>
 		<name>getDate</name>
-		<function-class>com.chinacreator.common.utils.DateUtils</function-class>
+		<function-class>erp.myproject.sys.utils.DateUtils</function-class>
 		<function-signature>java.lang.String getDate(java.lang.String)</function-signature>
 		<example>${fns:getDate(pattern)}</example>
 	</function>
 	<function>
 		<description>获取过去的天数</description>
 		<name>pastDays</name>
-		<function-class>com.chinacreator.common.utils.DateUtils</function-class>
+		<function-class>erp.myproject.sys.utils.DateUtils</function-class>
 		<function-signature>long pastDays(java.util.Date)</function-signature>
 		<example>${fns:pastDays(date)}</example>
 	</function>
@@ -322,35 +323,35 @@
 	<function>
 		<description>获取项目类型字典值(通过合同金额明细)</description>
 		<name>getAmountDetail</name>
-		<function-class>com.chinacreator.modules.sys.utils.DictUtils</function-class>
+		<function-class>erp.myproject.sys.utils.DictUtils</function-class>
 		<function-signature>java.util.List getAmountDetail(java.lang.String)</function-signature>
 		<example>${fns:getAmountDetail(contractid)}</example>
 	</function>
 	<function>
 		<description>获取项目类型字典值(通过合同金额明细)</description>
 		<name>getNewBidAmountDetail</name>
-		<function-class>com.chinacreator.modules.sys.utils.DictUtils</function-class>
+		<function-class>erp.myproject.sys.utils.DictUtils</function-class>
 		<function-signature>java.util.List getNewBidAmountDetail(java.lang.String)</function-signature>
 		<example>${fns:getNewBidAmountDetail(contractid)}</example>
 	</function>
 	<function>
 		<description>获取项目类型字典值(通过投标合同金额明细)</description>
 		<name>getbidAmountDetail</name>
-		<function-class>com.chinacreator.modules.sys.utils.DictUtils</function-class>
+		<function-class>erp.myproject.sys.utils.DictUtils</function-class>
 		<function-signature>java.util.List getbidAmountDetail(java.lang.String)</function-signature>
 		<example>${fns:getbidAmountDetail(bid)}</example>
 	</function>
 	<function>
 		<description>获取费用科目字典值</description>
 		<name>getDictCostList</name>
-		<function-class>com.chinacreator.modules.sys.utils.DictUtils</function-class>
+		<function-class>erp.myproject.sys.utils.DictUtils</function-class>
 		<function-signature>java.util.List getDictCostList()</function-signature>
 		<example>${fns:getDictCostList()}</example>
 	</function>
 	<function>
 		<description>获取费用科目字典值2</description>
 		<name>getDictCostListBy</name>
-		<function-class>com.chinacreator.modules.sys.utils.DictUtils</function-class>
+		<function-class>erp.myproject.sys.utils.DictUtils</function-class>
 		<function-signature>java.util.List getDictCostListBy(java.lang.String)</function-signature>
 		<example>${fns:getDictCostListBy()}</example>
 	</function>
@@ -358,7 +359,7 @@
 	<function>
     <description>获取合同已开发票数</description>
     <name>showAmountByCode</name>
-    <function-class>com.chinacreator.modules.sys.utils.DictUtils</function-class>
+    <function-class>erp.myproject.sys.utils.DictUtils</function-class>
     <function-signature>java.lang.String showAmountByCode(java.lang.String, java.lang.String)</function-signature>
     <example>${fns:showAmountByCode(contractid,code)}</example>  
   </function>
@@ -366,7 +367,7 @@
   <function>
     <description>获取合同已开发票数(明细)</description>
     <name>getReceiptAmountByCode</name>
-    <function-class>com.chinacreator.modules.sys.utils.DictUtils</function-class>
+    <function-class>erp.myproject.sys.utils.DictUtils</function-class>
     <function-signature>java.lang.String getReceiptAmountByCode(java.lang.String,java.lang.String,java.lang.String)</function-signature>
     <example>${fns:getReceiptAmountByCode(contractid)}</example>  
   </function>
@@ -374,7 +375,7 @@
   <function>
     <description>获取合同已到款数</description>
     <name>showReceiveAmountByCode</name>
-    <function-class>com.chinacreator.modules.sys.utils.DictUtils</function-class>
+    <function-class>erp.myproject.sys.utils.DictUtils</function-class>
     <function-signature>java.lang.String showReceiveAmountByCode(java.lang.String, java.lang.String)</function-signature>
     <example>${fns:showReceiveAmountByCode(contractid,code)}</example>  
   </function>
@@ -382,7 +383,7 @@
   <function>
     <description>获取合同已到款数(明细)</description>
     <name>getReceiveAmountByCode</name>
-    <function-class>com.chinacreator.modules.sys.utils.DictUtils</function-class>
+    <function-class>erp.myproject.sys.utils.DictUtils</function-class>
     <function-signature>java.lang.String getReceiveAmountByCode(java.lang.String,java.lang.String,java.lang.String)</function-signature>
     <example>${fns:getReceiveAmountByCode(contractid)}</example>  
   </function>
@@ -390,7 +391,7 @@
   <function>
     <description>获取回款条款</description>
     <name>getContractPaymentByID</name>
-    <function-class>com.chinacreator.modules.sys.utils.DictUtils</function-class>
+    <function-class>erp.myproject.sys.utils.DictUtils</function-class>
     <function-signature>java.lang.String getContractPaymentByID(java.lang.String)</function-signature>
     <example>${fns:getContractPaymentByID(cpid)}</example>  
   </function>
@@ -398,7 +399,7 @@
   <function>
     <description>格式化字符串</description>
     <name>getDoubleFormat</name>
-    <function-class>com.chinacreator.modules.sys.utils.DictUtils</function-class>
+    <function-class>erp.myproject.sys.utils.DictUtils</function-class>
     <function-signature>java.lang.String getDoubleFormat(java.lang.String,java.lang.Integer)</function-signature>
     <example>${fns:getDoubleFormat(data,len)}</example>  
   </function>
@@ -406,7 +407,7 @@
    <function>
     <description>字符串处理</description>
     <name>getStringReplace</name>
-    <function-class>com.chinacreator.modules.sys.utils.DictUtils</function-class>
+    <function-class>erp.myproject.sys.utils.DictUtils</function-class>
     <function-signature>java.lang.String getStringReplace(java.lang.String)</function-signature>
     <example>${fns:getStringReplace(data)}</example>  
   </function>
@@ -414,7 +415,7 @@
     <function>
     <description>获取报表实例</description>
     <name>getReportInstanceList</name>
-    <function-class>com.chinacreator.modules.sys.utils.DictUtils</function-class>
+    <function-class>erp.myproject.sys.utils.DictUtils</function-class>
     <function-signature>java.util.List getReportInstanceList(java.lang.String)</function-signature>
     <example>${fns:getReportInstanceList(reportid)}</example>  
   </function>
@@ -422,7 +423,7 @@
   <function>
 		<description>获取银行账户列表</description>
 		<name>getbankaccountList</name>
-		<function-class>com.chinacreator.modules.sys.utils.DictUtils</function-class>
+		<function-class>erp.myproject.sys.utils.DictUtils</function-class>
 		<function-signature>java.util.List getbankaccountList()</function-signature>
 		<example>${fns:getbankaccountList()}</example>
   </function>
@@ -430,7 +431,7 @@
    <function>
 		<description>获取收款类别列表</description>
 		<name>getSkDleList</name>
-		<function-class>com.chinacreator.modules.sys.utils.DictUtils</function-class>
+		<function-class>erp.myproject.sys.utils.DictUtils</function-class>
 		<function-signature>java.util.List getSkDleList()</function-signature>
 		<example>${fns:getSkDleList()}</example>
     </function>
@@ -438,7 +439,7 @@
     <function>
 		<description>获取付款类别列表</description>
 		<name>getFkDleList</name>
-		<function-class>com.chinacreator.modules.sys.utils.DictUtils</function-class>
+		<function-class>erp.myproject.sys.utils.DictUtils</function-class>
 		<function-signature>java.util.List getFkDleList()</function-signature>
 		<example>${fns:getFkDleList()}</example>
     </function>
@@ -446,7 +447,7 @@
    <function>
 		<description>获取收款大类</description>
 		<name>getdaleiList</name>
-		<function-class>com.chinacreator.modules.sys.utils.DictUtils</function-class>
+		<function-class>erp.myproject.sys.utils.DictUtils</function-class>
 		<function-signature>java.util.List getdaleiList(java.lang.String)</function-signature>
 		<example>${fns:getdaleiList(type)}</example>
   </function>
@@ -454,7 +455,7 @@
 	<function>
 		<description>获取系统所有用户</description>
 		<name>getAllUser</name>
-		<function-class>com.chinacreator.modules.sys.utils.UserUtils</function-class>
+		<function-class>erp.myproject.sys.utils.UserUtils</function-class>
 		<function-signature>java.util.List getAllUser()</function-signature>
 		<example>${fns:getAllUser()}</example>
 	</function>
@@ -462,36 +463,36 @@
 	<function>
 		<description>获取审核环节审核人信息</description>
 		<name>getUserListByroleOroffice</name>
-		<function-class>com.chinacreator.modules.sys.utils.UserUtils</function-class>
+		<function-class>erp.myproject.sys.utils.UserUtils</function-class>
 		<function-signature>java.util.List getUserListByroleOroffice(java.lang.String,java.lang.String)</function-signature>
 		<example>${fns:getUserListByroleOroffice(roleName,officeId)}</example>
 	</function>
 	<function>
 		<description>获取主管老总审核人信息</description>
 		<name>getUserListByReferoffice</name>
-		<function-class>com.chinacreator.modules.sys.utils.UserUtils</function-class>
+		<function-class>erp.myproject.sys.utils.UserUtils</function-class>
 		<function-signature>java.util.List getUserListByReferoffice(java.lang.String,java.lang.String)</function-signature>
 		<example>${fns:getUserListByReferoffice(roleName,officeId)}</example>
 	</function>
 	<function>
 		<description>获取主管老总信息</description>
 		<name>getUserListByUserOfficeid</name>
-		<function-class>com.chinacreator.modules.sys.utils.UserUtils</function-class>
+		<function-class>erp.myproject.sys.utils.UserUtils</function-class>
 		<function-signature>java.util.List getUserListByUserOfficeid(java.lang.String)</function-signature>
 		<example>${fns:getUserListByUserOfficeid(officeId)}</example>
 	</function>
 	<function>
 		<description>获取票据签收人</description>
 		<name>getUserListBycwfppjqs</name>
-		<function-class>com.chinacreator.modules.sys.utils.UserUtils</function-class>
+		<function-class>erp.myproject.sys.utils.UserUtils</function-class>
 		<function-signature>java.util.List getUserListBycwfppjqs(java.lang.String)</function-signature>
 		<example>${fns:getUserListBycwfppjqs(officeId)}</example>
 	</function>
 	<function>
 		<description>获取费用审核人</description>
 		<name>getUserListBycwfpfysh</name>
-		<function-class>com.chinacreator.modules.sys.utils.UserUtils</function-class>
+		<function-class>erp.myproject.sys.utils.UserUtils</function-class>
 		<function-signature>java.util.List getUserListBycwfpfysh(java.lang.String)</function-signature>
 		<example>${fns:getUserListBycwfpfysh(officeId)}</example>
-	</function>-->
+	</function>
 </taglib>

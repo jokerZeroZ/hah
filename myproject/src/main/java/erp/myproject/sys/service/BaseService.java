@@ -9,6 +9,7 @@ import org.hibernate.criterion.Junction;
 import org.hibernate.criterion.Restrictions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Service;
 
 import com.google.common.collect.Lists;
 
@@ -22,7 +23,7 @@ import erp.myproject.entity.User;
 * @version createTime:2018年3月13日 上午11:13:59 
 * explain
 */
-
+@Service
 public class BaseService {
 	
 	/**
