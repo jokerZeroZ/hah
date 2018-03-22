@@ -24,7 +24,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import erp.myproject.sys.entity.BaseEntity;
-import erp.myproject.sys.utils.UserUtils;
+//import erp.myproject.sys.utils.UserUtils;
 
 /** 
 * @author joker E-mail:zhanglq@hnu.edu.cn 
@@ -49,20 +49,20 @@ public abstract class DataEntity extends BaseEntity implements Serializable {
 		this.delFlag = DEL_FLAG_NORMAL;
 	}
 	
-	@PrePersist
-	public void prePersist(){
-		this.updateBy = UserUtils.getUser();
-		this.updateDate = new Date();
-		this.createBy = this.updateBy;
-		this.createDate = this.updateDate;
-	}
-	
-	@PreUpdate
-	public void preUpdate(){
-		this.updateBy = UserUtils.getUser();
-		this.updateDate = new Date();
-	}
-	
+//	@PrePersist
+//	public void prePersist(){
+//		this.updateBy = UserUtils.getUser();
+//		this.updateDate = new Date();
+//		this.createBy = this.updateBy;
+//		this.createDate = this.updateDate;
+//	}
+//	
+//	@PreUpdate
+//	public void preUpdate(){
+//		this.updateBy = UserUtils.getUser();
+//		this.updateDate = new Date();
+//	}
+//	
 //	@Length(min=0, max=255)
 	public String getRemarks() {
 		return remarks;

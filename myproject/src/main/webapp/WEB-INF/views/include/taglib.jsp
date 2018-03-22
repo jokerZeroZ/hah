@@ -6,5 +6,6 @@
 <%@ taglib prefix="fns" uri="/WEB-INF/tlds/fns.tld" %>
 <%@ taglib prefix="fnpca" uri="/WEB-INF/tlds/fnpca.tld" %>
 <%@ taglib prefix="tags" tagdir="/WEB-INF/tags" %>
+<%@include file="WEB-INF/views/include/head.jsp" %>
 <c:set var="ctx" value="${pageContext.request.contextPath}${fns:getAdminPath()}"/>
 <c:set var="ctxStatic" value="${pageContext.request.contextPath}/static"/>

@@ -124,6 +124,7 @@
     	<groupId>mysql</groupId>
     	<artifactId>mysql-connector-java</artifactId>
     	<version>${mysqlVersion}</version>
+    	<scope>provided</scope>
     </dependency>
     
     <!-- 数据库连接池 -->

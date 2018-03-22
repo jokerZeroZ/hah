@@ -12,7 +12,7 @@ import java.util.List;
 public interface DomainRepository<T,PK extends Serializable> {
 	T load(PK id);
 	
-	T get(PK id);
+	T get(String id);
 	
 	List<T> findAll();
 	
